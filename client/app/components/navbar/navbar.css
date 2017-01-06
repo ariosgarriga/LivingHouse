@@ -1,8 +1,14 @@
 .navbar-custom-internal a {
   color: #fff;
 }
+
+.navbar-inverse{
+  background-color: #131f28;
+}
+
 .navbar-inverse .navbar-logo {
   width: 140px;
+  margin-top: 7px;
 }
 .navbar-brandi {
   float: left;
