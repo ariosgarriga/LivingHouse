@@ -31,7 +31,7 @@
         <input type="text" name="phone" placeholder="0412-222 22222" class="form-control" ng-model="user.phone"
                required/>
         <p class="help-block" ng-show="form.name.$error.required && submitted">
-          Se requiere un numero de contacto 
+          Se requiere un numero de contacto
         </p>
       </div>
 
@@ -76,16 +76,6 @@
         </button>
         <a class="btn btn-default btn-lg btn-register" href="/login">
           Login
-        </a>
-      </div>
-
-      <hr>
-      <div>
-        <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
-          <i class="fa fa-facebook"></i> Connect with Facebook
-        </a>
-        <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
-          <i class="fa fa-twitter"></i> Connect with Twitter
         </a>
       </div>
     </form>
