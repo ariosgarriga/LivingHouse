@@ -6,7 +6,6 @@
       <div class="form-group" ng-class="{ 'has-success': form.name.$valid && submitted,
                                           'has-error': form.name.$invalid && submitted }">
         <label style="color: #083858;">Nombre</label><br/>
-
         <input type="text" name="name" placeholder="Nombre" class="form-control" ng-model="user.name" required/>
         <p class="help-block" ng-show="form.name.$error.required && submitted">
           Se requiere un Nombre
@@ -32,6 +31,35 @@
                required/>
         <p class="help-block" ng-show="form.name.$error.required && submitted">
           Se requiere un numero de contacto
+        </p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-success': form.phone.$valid && submitted,
+                                          'has-error': form.phone.$invalid && submitted }">
+        <label style="color: #083858;">Fecha de Nacimiento</label><br/>
+
+        <input type="date" name="birth"  class="form-control" ng-model="user.birth"
+               required/>
+        <p class="help-block" ng-show="form.name.$error.required && submitted">
+          Se requiere una fecha de nacimiento
+        </p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-success': form.phone.$valid && submitted,
+                                          'has-error': form.phone.$invalid && submitted }">
+        <label style="color: #083858;">Genero</label><br/>
+
+        <div class="btn-group" uib-dropdown keyboard-nav>
+        <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" uib-dropdown-toggle>
+            -Select- <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="simple-btn-keyboard-nav">
+            <li role="menuitem"><a href="#">Hombre</a></li>
+            <li role="menuitem"><a href="#">Mujer</a></li>
+        </ul>
+    </div>
+        <p class="help-block" ng-show="form.name.$error.required && submitted">
+          Se requiere una fecha de nacimiento
         </p>
       </div>
 

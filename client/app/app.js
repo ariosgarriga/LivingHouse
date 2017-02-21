@@ -8,6 +8,7 @@
       'ngResource',
       'ui.router',
       'ngAnimate',
+      'ngTouch',
       'ngFileUpload',
       'angularGrid',
       'angularMoment',
